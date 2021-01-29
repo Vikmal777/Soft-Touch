@@ -9,7 +9,7 @@ p {
 				color: #ff808a;
 }
 body{
-				/*background-image: url('../image/soft-touch.jpg');*/
+				/*background-image: url('/image/soft-touch.jpg');*/
 				background-position: center top;
 				font-size: 16px;
 				color: #7d1f1f;
