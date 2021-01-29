@@ -1,1 +1,22 @@
 <!DOCTYPE html>
+<html lang="ru">
+<head>
+				<title> Soft Touch</title>
+				<meta charset="UTF-8">
+				<link rel="stylesheet" href="css/style.css"></link>
+</head>
+<body>
+				<p>
+							Добро пожаловать на 	Soft Touch !
+				</p>
+				Привет Сашка
+				<br>
+				<br>
+				здесь много текста
+				<br>
+				<br>
+</body>
+<footer>
+				<a href="product.html">О продукции</a>
+</footer>
+</ html>
