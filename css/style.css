@@ -1,54 +1,52 @@
-body { 
-				font-family: Arial, Verdana, sans-serif;/* Семейство шрифтов */ 
-				font-size: 11pt; /* Размер основного шрифта в пунктах */ 
-				background-color: #161616; /* Цвет фона веб-страницы */ 
-				color: #333; /* Цвет основного текста */ 
-} 
-h1 { 
-				color: #a52a2a; /* Цвет заголовка*/			
-				font-size: 24pt; /* Размер шрифта в пунктах */ 
-				font-family: Georgia, Times, serif; /* Семейство шрифтов */ 
-				font-weight: normal; /* Нормальное начертание текста */ 
-				text-shadow: #073d55;
-} 
-p { 
-				text-align: justify; /* Выравнивание по ширине */ 
-				margin-left: 20px; /* Отступ слева в пикселах */ 
-				margin-right: 10px; /* Отступ справа в пикселах */ 
-				margin-bottom: 10px; /* Отступ снизу в пикселах*/
-				margin-top: 10px; /* Отступ сверху в пикселах*/
-				border-left: 1px solid #999; /* Параметры линии слева */ 
-				border-bottom: 1px solid #999; /* Параметры линии снизу */ 
-				border-right: 1px solid #999; /* Параметры линии справа*/
-				border-top: 1px solid #999; /* Параметры линии сверху */
-				padding-left: 10px; /* Отступ от линии слева до текста */ 
-				padding-bottom: 10px; /* Отступ от линии снизу до текста */ 
-				padding-right: 10px; /* Отступ от линии справа*/
-				padding-top: 10px; /* Отступ от линии сверху*/
-}
-a {
-				text-decoration: none;
-}
-a:visited {
-				color: #900060;
-}
-a:link {
-				color: #0000d0;
+html, body {
+				padding: 0;
+				margin: 0;
+				color: white;
 }
 
-.warning {
-				color: #ff1515;
-				text-align: justify; /* Выравнивание по ширине */ 
-				margin-left: 20px; /* Отступ слева в пикселах */ 
-				margin-right: 10px; /* Отступ справа в пикселах */ 
-				margin-bottom: 10px; /* Отступ снизу в пикселах*/
-				margin-top: 10px; /* Отступ сверху в пикселах*/
-				border-left: 1px solid #999; /* Параметры линии слева */ 
-				border-bottom: 1px solid #999; /* Параметры линии снизу */ 
-				border-right: 1px solid #999; /* Параметры линии справа*/
-				border-top: 1px solid #999; /* Параметры линии сверху */
-				padding-left: 10px; /* Отступ от линии слева до текста */ 
-				padding-bottom: 10px; /* Отступ от линии снизу до текста */ 
-				padding-right: 10px; /* Отступ от линии справа*/
-				padding-top: 10px; /* Отступ от линии сверху*/
+* {
+				box-sizing: border-box;
+}
+
+#wrapper {
+				width: 100%;
+				max-width: 1600px; /*988 и 612*/
+				margin: 0 auto;
+}
+
+#main {
+				width: 61.75%;
+				float: left;
+				
+				background-color: #ffa500;
+				padding: 20px;
+				color: #333;
+}
+
+#sidebar {
+				width: 38.25%;
+				float: right;
+				
+				background-color: #1d2432;
+				padding: 20px;
+				text-align: center;
+}
+
+.flexible-image {
+				max-width: 100%;
+}
+
+#wrapper, #main, #sidebar {
+				min-height: 100vh;
+}
+
+@media screen and (max-width: 415px) {
+				#main, #sidebar {
+								float: none;
+								width: 100%;
+				}
+				
+				#wrapper, #main, #sidebar {
+								min-height: initial;
+				}
 }
