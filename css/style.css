@@ -12,21 +12,21 @@ body{
 { 
 				.pic {
 				width: auto;
-				align-content: center;
+				text-align: center;
 				} 
 } 
 @media screen and (max-width: 1280px) 
 { 
 				.pic {
 				width: 1100px;
-				align-content: center;
+				text-align: center;
 				} 
 } 
 @media screen and (max-width: 1024px) 
 { 
 			 .pic {
 				width: 980px;
-				align-content: center;
+				text-align: center;
 				}
 }
 
@@ -34,7 +34,7 @@ body{
 { 
 				.pic {
 				width: 360px;
-				align-content: center;
+				text-align: center;
 				}
 }
 
